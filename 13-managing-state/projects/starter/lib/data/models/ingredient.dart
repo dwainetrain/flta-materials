@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+// TODO: Should we be concered about warnings like this?
 class Ingredient extends Equatable {
   int? id;
   int? recipeId;
