@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
@@ -30,23 +29,25 @@ class RecipeDetails extends StatelessWidget {
                 Stack(
                   children: [
                     // Comment out Align()
-                    // Align(
-                    //   alignment: Alignment.topCenter,
-                    //   child: Image.asset(
-                    //     'assets/images/pizza_w700.png',
-                    //     height: 200,
-                    //     width: 200,
-                    //   ),
-                    // ),
+                    // Mock Service
                     Align(
-                      alignment: Alignment.topLeft,
-                      child: CachedNetworkImage(
-                        imageUrl: recipe.image ?? '',
-                        alignment: Alignment.topLeft,
-                        fit: BoxFit.fill,
-                        width: size.width,
+                      alignment: Alignment.topCenter,
+                      child: Image.asset(
+                        'assets/images/pizza_w700.png',
+                        height: 200,
+                        width: 200,
                       ),
                     ),
+                    // API Service
+                    // Align(
+                    //   alignment: Alignment.topLeft,
+                    //   child: CachedNetworkImage(
+                    //     imageUrl: recipe.image ?? '',
+                    //     alignment: Alignment.topLeft,
+                    //     fit: BoxFit.fill,
+                    //     width: size.width,
+                    //   ),
+                    // ),
                     Align(
                       alignment: Alignment.topLeft,
                       child: Container(
