@@ -24,6 +24,12 @@ class Recipe extends Equatable {
   });
 
   @override
-  List<Object?> get props =>
-      [label, image, url, calories, totalWeight, totalTime];
+  List<Object?> get props => [
+        label,
+        image,
+        url,
+        calories,
+        totalWeight,
+        totalTime,
+      ];
 }
