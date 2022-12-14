@@ -33,6 +33,7 @@ class MemoryRepository extends Repository with ChangeNotifier {
     final recipeIngredients = _currentIngredients
         .where((ingredient) => ingredient.recipeId == recipe.id)
         .toList(); // TODO: Ask Jim, is Dart implying the type here with toList?
+
     return recipeIngredients;
   }
 
