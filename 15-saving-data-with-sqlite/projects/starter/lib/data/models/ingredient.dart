@@ -28,8 +28,8 @@ class Ingredient extends Equatable {
         weight: json['weight'],
       );
 
-  // Convert our ingredient to JSON to make it wasier when you
-// store it in the database
+  // Convert our ingredient to JSON to make it easier when you
+  // store it in the database
   Map<String, dynamic> toJson() => {
         'ingredientId': id,
         'recipeId': recipeId,
