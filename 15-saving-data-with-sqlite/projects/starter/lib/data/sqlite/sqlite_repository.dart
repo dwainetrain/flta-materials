@@ -60,7 +60,7 @@ class SqliteRepository extends Repository {
       // TODO: Ask Jim, is this another scenario
       //  where we should suppress the error?
       // setting this to isNotEmpty produces an error
-      if (ingredients.length != 0) {
+      if (ingredients.isNotEmpty) {
         final ingredientIds = <int>[];
         await Future.forEach(ingredients, (Ingredient ingredient) async {
           final futureId = await dbHelper.insertIngredient(ingredient);
