@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.raywenderlich.recipe_finder">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
    <application
         android:label="Recipe 🔎"
         android:name="${applicationName}"

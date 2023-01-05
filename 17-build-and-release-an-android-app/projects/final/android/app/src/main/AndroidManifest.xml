@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.raywenderlich.recipe_finder">
+    xmlns:tools="http://schemas.android.com/tools" package="com.dwainebest.recipe_finder">
    <application
         android:label="Recipe 🔎"
         android:name="${applicationName}"
@@ -33,4 +33,5 @@
     </application>
     <!-- add permissions here -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
 </manifest>
