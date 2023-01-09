@@ -13,4 +13,6 @@ class MessageDao {
   Stream<QuerySnapshot> getMessageStream() {
     return collection.snapshots();
   }
+
+  // TODO: Add signup
 }
